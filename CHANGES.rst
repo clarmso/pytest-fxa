@@ -1,6 +1,10 @@
 Release Notes
 -------------
 
+**1.5.0 (2024-09-25)**
+
+* Bump PyFxA package so that we can remove the test account during test teardown.
+
 **1.4.0 (2018-08-28)**
 
 * Match session when verifying account and cleanup when verification fails.
