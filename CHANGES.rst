@@ -1,9 +1,9 @@
 Release Notes
 -------------
 
-**1.5.0 (2024-09-25)**
+**1.5.1 (2024-09-25)**
 
-* Bump PyFxA package so that we can remove the test account during test teardown.
+* Bump PyFxA (now pyfxa-mte) package so that we can remove the test account during test teardown.
 
 **1.4.0 (2018-08-28)**
 
