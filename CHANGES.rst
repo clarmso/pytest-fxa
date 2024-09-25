@@ -1,6 +1,10 @@
 Release Notes
 -------------
 
+**1.5.2 (2024-09-25)**
+
+* Add maintainer and project URL.
+
 **1.5.1 (2024-09-25)**
 
 * Bump PyFxA (now pyfxa-mte) package so that we can remove the test account during test teardown.

@@ -5,13 +5,15 @@
 from setuptools import setup
 
 setup(
-    version="1.5.1",
+    version="1.5.2",
     name="pytest-fxa-mte",
     description="pytest plugin for Firefox Accounts",
     long_description=open("README.rst").read(),
     author="Dave Hunt",
     author_email="dhunt@mozilla.com",
-    url="https://github.com/davehunt/pytest-fxa",
+    url="https://github.com/clarmso/pytest-fxa",
+    maintainer="Clare So",
+    maintainer_email="cso@mozilla.com",
     packages=["pytest_fxa"],
     install_requires=["pyfxa-mte"],
     setup_requires=["setuptools_scm"],
