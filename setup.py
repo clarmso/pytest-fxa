@@ -5,7 +5,7 @@
 from setuptools import setup
 
 setup(
-    version="1.6.0-b1",
+    version="1.6.0",
     name="pytest-fxa-mte",
     description="pytest plugin for Firefox Accounts",
     long_description=open("README.rst").read(),
