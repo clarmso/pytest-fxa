@@ -1,6 +1,12 @@
 Release Notes
 -------------
 
+**1.7.0 (2026-03-23)**
+
+* Bump PyFxA to version 0.8.1.
+* Bump pyenv to version 2023.12.1.
+* Test the package with Python 3.10 to 3.14. Retire support for EOL Python versions.
+
 **1.6.0 (2024-09-27)**
 
 * Use the official release of PyFxA 0.7.9 instead of a forked release.

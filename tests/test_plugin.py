@@ -111,7 +111,7 @@ def test_no_email_given(testdir):
 
 
 def test_fxa_env_env_variable(monkeypatch, testdir):
-    env = "stable"
+    env = "stage"
     monkeypatch.setenv("FXA_ENV", env)
     testdir.makepyfile(
         """
@@ -150,7 +150,7 @@ def test_fxa_env_marker_multi(monkeypatch, testdir):
         """
         import pytest
 
-        @pytest.mark.fxa_env('stable', 'stage')
+        @pytest.mark.fxa_env('production', 'stage')
         def test_account(fxa_urls): pass
     """
     )
@@ -186,5 +186,5 @@ def test_cleanup_after_failed_verification(mocker, testdir):
     """
     )
     result = testdir.runpytest()
-    result.assert_outcomes(error=1)
+    result.assert_outcomes(errors=1)
     assert plugin.fxa_cleanup.call_count == 1

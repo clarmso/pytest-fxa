@@ -92,7 +92,9 @@ def fxa_account(fxa_client, fxa_email):
     FxAccount = collections.namedtuple("FxAccount", "email password")
     fxa_account = FxAccount(email=account.email, password=password)
     try:
-        session = fxa_client.create_account(fxa_account.email, fxa_account.password)
+        session = fxa_client.create_account(
+            fxa_account.email, fxa_account.password
+        )
         logger.info("Created: {}".format(fxa_account))
         message = account.wait_for_email(
             lambda m: "x-verify-code" in m["headers"]
