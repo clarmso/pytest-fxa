@@ -1,7 +1,7 @@
 Release Notes
 -------------
 
-**1.7.0b1 (2026-03-23)**
+**1.7.0 (2026-05-15)**
 
 * Bump PyFxA to version 0.8.1.
 * Bump pyenv to version 2023.12.1.
