@@ -1,6 +1,13 @@
 Release Notes
 -------------
 
+**1.8.0b1 (2026-05-15)**
+
+* Require PyFxA >= 0.8.2, which adds support for the ``CI_WAF_TOKEN``
+  environment variable. Set ``CI_WAF_TOKEN`` in your CI environment so that
+  PyFxA can send the ``fxa-ci`` header to bypass the FxA WAF / Fastly
+  Dynamic Challenge once the legacy PyFxA user-agent allowlist is removed.
+
 **1.7.0 (2026-05-15)**
 
 * Bump PyFxA to version 0.8.1.
