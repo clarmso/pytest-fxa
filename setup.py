@@ -5,7 +5,7 @@
 from setuptools import setup
 
 setup(
-    version="1.7.0",
+    version="1.8.0",
     name="pytest-fxa-mte",
     description="pytest plugin for Firefox Accounts",
     long_description=open("README.rst").read(),
@@ -15,7 +15,7 @@ setup(
     maintainer="Clare So",
     maintainer_email="cso@mozilla.com",
     packages=["pytest_fxa"],
-    install_requires=["PyFxA"],
+    install_requires=["PyFxA>=0.8.2"],
     setup_requires=["setuptools_scm"],
     entry_points={"pytest11": ["fxa = pytest_fxa.plugin"]},
     license="MPL-2.0",
