@@ -1,7 +1,7 @@
 Release Notes
 -------------
 
-**1.8.0b1 (2026-05-15)**
+**1.8.0 (2026-05-21)**
 
 * Require PyFxA >= 0.8.2, which adds support for the ``CI_WAF_TOKEN``
   environment variable. Set ``CI_WAF_TOKEN`` in your CI environment so that
